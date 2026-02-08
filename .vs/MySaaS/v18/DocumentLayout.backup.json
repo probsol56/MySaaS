@@ -1,0 +1,105 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Works\\Personal\\MySaaS\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{22EEE321-9743-421D-9082-071F242882B4}|MySaaS.API\\MySaaS.API.csproj|d:\\works\\personal\\mysaas\\mysaas.api\\controllers\\tenantscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{22EEE321-9743-421D-9082-071F242882B4}|MySaaS.API\\MySaaS.API.csproj|solutionrelative:mysaas.api\\controllers\\tenantscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22EEE321-9743-421D-9082-071F242882B4}|MySaaS.API\\MySaaS.API.csproj|d:\\works\\personal\\mysaas\\mysaas.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{22EEE321-9743-421D-9082-071F242882B4}|MySaaS.API\\MySaaS.API.csproj|solutionrelative:mysaas.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D09B86D-346F-4E8B-B576-0B558FA5B734}|MySaaS.Domain\\MySaaS.Domain.csproj|d:\\works\\personal\\mysaas\\mysaas.domain\\entities\\tenant.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7D09B86D-346F-4E8B-B576-0B558FA5B734}|MySaaS.Domain\\MySaaS.Domain.csproj|solutionrelative:mysaas.domain\\entities\\tenant.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D09B86D-346F-4E8B-B576-0B558FA5B734}|MySaaS.Domain\\MySaaS.Domain.csproj|d:\\works\\personal\\mysaas\\mysaas.domain\\entities\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7D09B86D-346F-4E8B-B576-0B558FA5B734}|MySaaS.Domain\\MySaaS.Domain.csproj|solutionrelative:mysaas.domain\\entities\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B258037-316E-4EC9-A05F-8790E320E472}|MySaaS.Infrastructure\\MySaaS.Infrastructure.csproj|d:\\works\\personal\\mysaas\\mysaas.infrastructure\\services\\currenttenantservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B258037-316E-4EC9-A05F-8790E320E472}|MySaaS.Infrastructure\\MySaaS.Infrastructure.csproj|solutionrelative:mysaas.infrastructure\\services\\currenttenantservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "TenantsController.cs",
+              "DocumentMoniker": "D:\\Works\\Personal\\MySaaS\\MySaaS.API\\Controllers\\TenantsController.cs",
+              "RelativeDocumentMoniker": "MySaaS.API\\Controllers\\TenantsController.cs",
+              "ToolTip": "D:\\Works\\Personal\\MySaaS\\MySaaS.API\\Controllers\\TenantsController.cs",
+              "RelativeToolTip": "MySaaS.API\\Controllers\\TenantsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-31T15:41:38.102Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CurrentTenantService.cs",
+              "DocumentMoniker": "D:\\Works\\Personal\\MySaaS\\MySaaS.Infrastructure\\Services\\CurrentTenantService.cs",
+              "RelativeDocumentMoniker": "MySaaS.Infrastructure\\Services\\CurrentTenantService.cs",
+              "ToolTip": "D:\\Works\\Personal\\MySaaS\\MySaaS.Infrastructure\\Services\\CurrentTenantService.cs",
+              "RelativeToolTip": "MySaaS.Infrastructure\\Services\\CurrentTenantService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-31T13:36:03.028Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Works\\Personal\\MySaaS\\MySaaS.API\\Program.cs",
+              "RelativeDocumentMoniker": "MySaaS.API\\Program.cs",
+              "ToolTip": "D:\\Works\\Personal\\MySaaS\\MySaaS.API\\Program.cs",
+              "RelativeToolTip": "MySaaS.API\\Program.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAACIAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-31T13:32:01.187Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ApplicationUser.cs",
+              "DocumentMoniker": "D:\\Works\\Personal\\MySaaS\\MySaaS.Domain\\Entities\\ApplicationUser.cs",
+              "RelativeDocumentMoniker": "MySaaS.Domain\\Entities\\ApplicationUser.cs",
+              "ToolTip": "D:\\Works\\Personal\\MySaaS\\MySaaS.Domain\\Entities\\ApplicationUser.cs",
+              "RelativeToolTip": "MySaaS.Domain\\Entities\\ApplicationUser.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-30T01:54:52.116Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Tenant.cs",
+              "DocumentMoniker": "D:\\Works\\Personal\\MySaaS\\MySaaS.Domain\\Entities\\Tenant.cs",
+              "RelativeDocumentMoniker": "MySaaS.Domain\\Entities\\Tenant.cs",
+              "ToolTip": "D:\\Works\\Personal\\MySaaS\\MySaaS.Domain\\Entities\\Tenant.cs",
+              "RelativeToolTip": "MySaaS.Domain\\Entities\\Tenant.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-29T17:28:17.613Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

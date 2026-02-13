@@ -74,3 +74,42 @@ public record UserInfoResponse
     public Guid TenantId { get; init; }
     public string TenantName { get; init; } = string.Empty;
 }
+
+// =====================================
+// PASSWORD RESET DTOs
+// =====================================
+
+/// <summary>
+/// Request DTO for forgot password.
+/// </summary>
+public record ForgotPasswordRequest
+{
+    [Required(ErrorMessage = "Email is required.")]
+    [EmailAddress(ErrorMessage = "Invalid email format.")]
+    public required string Email { get; init; }
+}
+
+/// <summary>
+/// Request DTO for resetting password with token.
+/// </summary>
+public record ResetPasswordRequest
+{
+    [Required(ErrorMessage = "Reset token is required.")]
+    public required string Token { get; init; }
+
+    [Required(ErrorMessage = "New password is required.")]
+    [MinLength(8, ErrorMessage = "Password must be at least 8 characters.")]
+    public required string NewPassword { get; init; }
+
+    [Required(ErrorMessage = "Password confirmation is required.")]
+    [Compare(nameof(NewPassword), ErrorMessage = "Passwords do not match.")]
+    public required string ConfirmPassword { get; init; }
+}
+
+/// <summary>
+/// Response DTO for forgot password request.
+/// </summary>
+public record ForgotPasswordResponse
+{
+    public string Message { get; init; } = string.Empty;
+}

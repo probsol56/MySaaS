@@ -13,14 +13,9 @@ namespace MySaaS.Infrastructure.Services;
 /// <summary>
 /// JWT token generation service following .NET 10 best practices.
 /// </summary>
-public class TokenService : ITokenService
+public class TokenService(IOptions<JwtSettings> jwtSettings) : ITokenService
 {
-    private readonly JwtSettings _jwtSettings;
-
-    public TokenService(IOptions<JwtSettings> jwtSettings)
-    {
-        _jwtSettings = jwtSettings.Value;
-    }
+    private readonly JwtSettings _jwtSettings = jwtSettings.Value;
 
     public string GenerateAccessToken(ApplicationUser user)
     {

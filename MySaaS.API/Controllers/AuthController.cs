@@ -207,4 +207,51 @@ IOptions<JwtSettings> jwtSettings) : ControllerBase
             }
         };
     }
+
+    /// <summary>
+    /// Initiates password reset process by sending a reset token to the user's email.
+    /// Returns success message regardless of whether email exists (security best practice).
+    /// </summary>
+    [HttpPost("forgot-password")]
+    [ProducesResponseType(typeof(ForgotPasswordResponse), StatusCodes.Status200OK)]
+    [ProducesResponseType(StatusCodes.Status400BadRequest)]
+    public async Task<ActionResult<ForgotPasswordResponse>> ForgotPassword(
+        [FromBody] ForgotPasswordRequest request,
+        [FromServices] IPasswordResetService passwordResetService,
+        CancellationToken cancellationToken)
+    {
+        // Generate reset token and send email
+        await passwordResetService.GeneratePasswordResetTokenAsync(request.Email, cancellationToken);
+
+        // Always return success message (don't reveal if email exists)
+        return Ok(new ForgotPasswordResponse
+        {
+            Message = "If an account with that email exists, a password reset link has been sent."
+        });
+    }
+
+    /// <summary>
+    /// Resets user password using a valid reset token.
+    /// </summary>
+    [HttpPost("reset-password")]
+    [ProducesResponseType(StatusCodes.Status200OK)]
+    [ProducesResponseType(StatusCodes.Status400BadRequest)]
+    public async Task<IActionResult> ResetPassword(
+        [FromBody] ResetPasswordRequest request,
+        [FromServices] IPasswordResetService passwordResetService,
+        CancellationToken cancellationToken)
+    {
+        var success = await passwordResetService.ResetPasswordAsync(
+            request.Token,
+            request.NewPassword,
+            cancellationToken);
+
+        if (!success)
+        {
+            return BadRequest(new { message = "Invalid or expired reset token." });
+        }
+
+        return Ok(new { message = "Password has been reset successfully." });
+    }
 }
+

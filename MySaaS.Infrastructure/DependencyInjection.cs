@@ -25,6 +25,8 @@ public static class DependencyInjection
         services.AddScoped<ICurrentTenantService, CurrentTenantService>();
         services.AddScoped<ITenantService, TenantService>();
         services.AddScoped<ITokenService, TokenService>();
+        services.AddScoped<IPasswordResetService, PasswordResetService>();
+        services.AddScoped<IEmailService, EmailService>();
 
         services.AddDbContext<ApplicationDbContext>((sp, options) =>
         {
